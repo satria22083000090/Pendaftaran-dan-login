@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Cause-Effect Diagram - Pendaftaran dan Login" id="YhEtbsGgoqE3BzLfOmQ8">
+    <mxGraphModel dx="1312" dy="813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Kondisi Pendaftaran -->
+        <mxCell id="c1" value="C1: Email Valid" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2" value="C2: Password Kuat" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3" value="C3: Username Tidak Kosong" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c4" value="C4: Setuju S&amp;K" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- AND gate pendaftaran -->
+        <mxCell id="and1" value="AND" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="60" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Efek Pendaftaran -->
+        <mxCell id="e1" value="E1: Akun Berhasil Dibuat" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="100" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="E2: Pendaftaran Gagal" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="180" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Kondisi Login -->
+        <mxCell id="c5" value="C5: Email Terdaftar" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c6" value="C6: Password Cocok" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="150" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- AND gate login -->
+        <mxCell id="and2" value="AND" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="60" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Efek Login -->
+        <mxCell id="e3" value="E3: Login Berhasil" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="E4: Login Gagal" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="420" width="160" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges Pendaftaran -->
+        <mxCell edge="1" parent="1" source="c1" target="and1" style="endArrow=none;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="c2" target="and1" style="endArrow=none;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="c3" target="and1" style="endArrow=none;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="c4" target="and1" style="endArrow=none;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="and1" target="e1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="and1" target="e2" style="dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Edges Login -->
+        <mxCell edge="1" parent="1" source="c5" target="and2" style="endArrow=none;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="c6" target="and2" style="endArrow=none;"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="and2" target="e3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="and2" target="e4" style="dashed=1;"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
